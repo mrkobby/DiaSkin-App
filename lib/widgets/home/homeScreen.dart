@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -34,7 +35,7 @@ class _HomeState extends State<Home> {
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 6.0, left: 16.0),
-                child: Text("Sunday, Dec 15"),
+                child: Text(DateFormat.yMMMMd('en_US').format(DateTime.now()),),
               ),
             ],
           ),
